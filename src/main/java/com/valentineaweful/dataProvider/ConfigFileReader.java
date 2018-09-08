@@ -12,7 +12,6 @@ public class ConfigFileReader {
     private static final String PROP_LOCATION = System.getProperty("user.dir") + "/data.properties";
 
     public ConfigFileReader() {
-        System.out.println(PROP_LOCATION);
         properties = new Properties();
         try (BufferedInputStream buf = new BufferedInputStream(new FileInputStream(PROP_LOCATION))) {
             properties.load(buf);
@@ -25,10 +24,16 @@ public class ConfigFileReader {
 
     public String getApplicationURL() {
         String url = properties.getProperty("url");
-        System.out.println(url);
         if (url != null) {
             return url;
         } else throw new RuntimeException("URL set to Null !");
+    }
+
+    public String getBrowser() {
+        String browser = properties.getProperty("browser");
+        if (browser != null) {
+            return browser;
+        } else throw new RuntimeException("Browser set to Null !");
     }
 
 }

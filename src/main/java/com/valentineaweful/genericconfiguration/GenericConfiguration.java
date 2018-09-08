@@ -1,23 +1,22 @@
 package com.valentineaweful.genericconfiguration;
 
+import com.valentineaweful.managers.DriverProvider;
 import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
-public class GenericConfiguration {
+public class GenericConfiguration extends DriverProvider {
     private WebDriver driver;
 
-    @Before
-    public void beforeScenario(Scenario scenario){
-        System.out.println(scenario.getName());
-        WebDriverManager.chromedriver().setup();
+    public GenericConfiguration(WebDriver driver) {
+        this.driver = driver;
     }
 
-    @After
-    public void afterScenario(){
-        if(driver != null){
+    public void beforeScenario(Scenario scenario) {
+        System.out.println("Scenario Name = " + scenario.getName());
+    }
+
+    public void afterScenario() {
+        if (driver != null) {
             driver.close();
         }
     }

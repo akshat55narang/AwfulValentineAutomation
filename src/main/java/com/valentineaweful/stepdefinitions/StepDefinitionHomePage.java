@@ -1,13 +1,25 @@
 package com.valentineaweful.stepdefinitions;
 
+import com.valentineaweful.managers.ConfigFileManager;
+import com.valentineaweful.managers.DriverProvider;
+import com.valentineaweful.managers.PageManager;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
 
-public class StepDefinitionHomePage {
+public class StepDefinitionHomePage extends DriverProvider {
+    private WebDriver driver;
+    private PageManager pageManager;
+
+    public StepDefinitionHomePage(){
+        driver = getDriver(ConfigFileManager.getInstance().getConfiguration().getBrowser());
+        pageManager = new PageManager(driver);
+    }
+
     @Given("^I am on the Home Page$")
     public void i_am_on_the_Home_Page() {
-        
+        pageManager.getWrapperPage().get();
     }
 
     @Then("^I should be able to view the text \"([^\"]*)\"$")
@@ -41,6 +53,6 @@ public class StepDefinitionHomePage {
 
     @Then("^I should be redirected to the page containing info about the book \"([^\"]*)\"$")
     public void i_should_be_redirected_to_the_page_containing_info_about_the_book(String arg1) {
-        
+
     }
 }
