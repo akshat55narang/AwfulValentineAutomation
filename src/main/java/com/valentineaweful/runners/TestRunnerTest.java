@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features =  "src/main/resources/Feature"
-,glue = "stepdefinitions"
+,glue = "com/valentineaweful/stepdefinitions"
 ,monochrome = true
 ,dryRun = false)
 public class TestRunnerTest extends TestRunner {
