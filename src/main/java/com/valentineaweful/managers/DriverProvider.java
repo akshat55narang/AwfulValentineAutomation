@@ -9,7 +9,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class DriverProvider {
     private static WebDriver driver;
 
-    protected WebDriver getDriver(String browser) {
+    protected WebDriver openBrowser() {
+        String browser = ConfigFileManager.getInstance().getConfiguration().getBrowser();
         if (driver == null) {
             switch (browser) {
                 case "Chrome":
@@ -25,9 +26,12 @@ public class DriverProvider {
                     driver = new InternetExplorerDriver();
                     break;
             }
-
         }
         return driver;
+    }
+
+    public WebDriver getDriver() {
+        return (driver == null) ? driver = openBrowser() : driver;
     }
 
 }

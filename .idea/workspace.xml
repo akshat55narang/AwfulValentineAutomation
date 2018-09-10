@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78e31334-7c8e-4313-92b5-c91cf8d99818" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/ConfigFileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/PageManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/dataProvider/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/dataProvider/ConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/FleuentialWaitProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionGeneric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/runners/TestRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/runners/TestRunnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/Test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Feature/Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Feature/Test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valentineaweful/genericconfiguration/GenericConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valentineaweful/managers/DriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/valentineaweful/managers/DriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valentineaweful/pages/WrapperPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/valentineaweful/pages/WrapperPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valentineaweful/runners/TestRunnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/valentineaweful/runners/TestRunnerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +33,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="26" />
-          <entry key="java" value="28" />
+          <entry key="feature" value="1" />
+          <entry key="java" value="37" />
           <entry key="properties" value="2" />
           <entry key="xml" value="1" />
         </counts>
@@ -36,36 +42,46 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="28" />
+          <entry key="Cucumber" value="1" />
+          <entry key="JAVA" value="37" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="21" />
-          <entry key="java" value="2062" />
+          <entry key="dummy" value="45" />
+          <entry key="feature" value="91" />
+          <entry key="java" value="3682" />
           <entry key="properties" value="16" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2062" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Cucumber" value="91" />
+          <entry key="JAVA" value="3682" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="Properties" value="16" />
           <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="165">
+              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
               <folding>
                 <element signature="e#735#736#0" expanded="true" />
                 <element signature="e#785#786#0" expanded="true" />
@@ -74,30 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/PageManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/Test.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -105,23 +102,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="294">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,14 +150,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/ConfigFileManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/WebDriverManager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/dataProvider/ConfigFileReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/PageManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java" />
         <option value="$PROJECT_DIR$/data.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/GenericConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionGeneric.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/FleuentialWaitProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Feature/Test.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/runners/TestRunnerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java" />
       </list>
     </option>
   </component>
@@ -175,13 +178,30 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="AwefulValentine" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="803" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,18 +278,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="valentineaweful" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AwefulValentine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AwfulValentineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="valentineaweful" type="462c0819:PsiDirectoryNode" />
               <item name="stepdefinitions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AwefulValentine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AwfulValentineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AwefulValentine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AwfulValentineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Feature" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536434180413" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536612774095" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -358,66 +401,67 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunnerTest - 2018.09.08 at 20h 41m 18s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 44m 28s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 20h 45m 12s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 50m 17s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 20h 54m 29s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 50m 41s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 13m 04s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 52m 48s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 14m 01s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 53m 16s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 14m 32s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 21h 57m 19s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 14m 40s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 22h 01m 42s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 15m 37s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 22h 02m 16s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 16m 27s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 22h 22m 03s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunnerTest - 2018.09.08 at 21h 16m 28s.xml">
+    <history-entry file="TestRunnerTest - 2018.09.10 at 22h 24m 16s.xml">
       <configuration name="TestRunnerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32867134" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.15104896" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.37622377" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.37622377" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.4463277" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4618644" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.52307695" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.37622377" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32768363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.18454936" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -442,20 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/GenericConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#2343#2344#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -550,12 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="231" selection-start-line="231" selection-end-line="231" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,36 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/runners/TestRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -628,20 +619,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/PageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="300">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/genericconfiguration/FleuentialWaitProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/stepdefinitions/StepDefinitionHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="165">
+          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
           <folding>
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
@@ -649,16 +666,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/PageManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/runners/TestRunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/managers/DriverProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/Test.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/WrapperPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valentineaweful/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
