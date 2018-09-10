@@ -1,22 +1,35 @@
 package com.valentineaweful.stepdefinitions;
 
+import com.valentineaweful.managers.DriverProvider;
+import com.valentineaweful.managers.PageManager;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
-public class StepDefinitionHomePage {
+public class StepDefinitionHomePage extends DriverProvider {
+    private WebDriver driver;
+    private PageManager pageManager;
+
+    public StepDefinitionHomePage(){
+        driver = getDriver();
+        pageManager = new PageManager(driver);
+    }
+
     @Given("^I am on the Home Page$")
     public void i_am_on_the_Home_Page() {
-        
+        pageManager.getWrapperPage().get();
     }
 
-    @Then("^I should be able to view the text \"([^\"]*)\"$")
-    public void i_should_be_able_to_view_the_text(String arg1) {
+    @Then("^I should be able to view the text \"([^\"]*)\" as the page title$")
+    public void i_should_be_able_to_view_the_text(String title) {
+        Assert.assertEquals(title,pageManager.getWrapperPage().getTitle());
     }
 
-    @When("^I click on the button \"([^\"]*)\" for the book \"([^\"]*)\"$")
-    public void i_click_on_the_button_for_the_book(String arg1, String arg2) {
-
+    @When("^I click on the button \"([^\"]*)\" for the book \"([^\"]*)\" in Special Offers$")
+    public void i_click_on_the_button_for_the_book(String addToCart, String bookName) {
+        pageManager.getHomPage().getBookBySpecialOffers(addToCart,bookName);
     }
 
     @Then("^I should be able to see a pop up with the price overview$")
@@ -41,6 +54,6 @@ public class StepDefinitionHomePage {
 
     @Then("^I should be redirected to the page containing info about the book \"([^\"]*)\"$")
     public void i_should_be_redirected_to_the_page_containing_info_about_the_book(String arg1) {
-        
+
     }
 }
