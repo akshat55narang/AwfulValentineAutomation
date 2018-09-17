@@ -12,7 +12,7 @@ public class StepDefinitionHomePage extends DriverProvider {
     private WebDriver driver;
     private PageManager pageManager;
 
-    public StepDefinitionHomePage(){
+    public StepDefinitionHomePage() {
         driver = getDriver();
         pageManager = new PageManager(driver);
     }
@@ -24,36 +24,37 @@ public class StepDefinitionHomePage extends DriverProvider {
 
     @Then("^I should be able to view the text \"([^\"]*)\" as the page title$")
     public void i_should_be_able_to_view_the_text(String title) {
-        Assert.assertEquals(title,pageManager.getWrapperPage().getTitle());
+        Assert.assertEquals(title, pageManager.getWrapperPage().getTitle());
     }
 
     @When("^I click on the button \"([^\"]*)\" for the book \"([^\"]*)\" in Special Offers$")
-    public void i_click_on_the_button_for_the_book(String addToCart, String bookName) {
-        pageManager.getHomPage().getBookBySpecialOffers(addToCart,bookName);
+    public void i_click_on_the_button_for_the_book(String option, String bookName) {
+        pageManager.getHomPage().getBookBySpecialOffers(option, bookName);
     }
 
     @Then("^I should be able to see a pop up with the price overview$")
     public void i_should_be_able_to_see_a_pop_up_with_the_price_overview() {
-
+        pageManager.getHomPage().getCartAdditionConfirmationPopUP();
     }
 
     @When("^I click on the button \"([^\"]*)\"$")
-    public void i_click_on_the_button(String arg1) {
-
+    public void i_click_on_the_button(String buttonText) {
+        pageManager.getHomPage().getAddToCartPopUpButton(buttonText);
     }
 
     @Then("^I should be redirected to my \"([^\"]*)\"$")
-    public void i_should_be_redirected_to_my(String arg1) {
-
+    public void i_should_be_redirected_to_my(String cart) {
+        pageManager.getCartPage().verifyShoppingCartPage(cart);
     }
 
-    @Then("^I should be able to see the item added in Cart$")
-    public void i_should_be_able_to_see_the_item_added_in_Cart() {
-
+    @Then("^I should be able to see the book \"([^\"]*)\" added in Cart$")
+    public void i_should_be_able_to_see_the_item_added_in_Cart(String book) {
+        pageManager.getCartPage().verifyItemInCart(book);
     }
 
     @Then("^I should be redirected to the page containing info about the book \"([^\"]*)\"$")
-    public void i_should_be_redirected_to_the_page_containing_info_about_the_book(String arg1) {
+    public void verifyCardInfo(String card) {
+        pageManager.getWrapperPage().verifyUrlResource(card);
 
     }
 }

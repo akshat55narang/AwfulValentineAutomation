@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         , glue = "com/valentineaweful/stepdefinitions"
         , monochrome = true
         , plugin = {"pretty", "html:Folder_Name"}
-        , tags = "@test"
+        //, tags = "@test"
         , dryRun = false)
 public class TestRunnerTest extends TestRunner {
 }

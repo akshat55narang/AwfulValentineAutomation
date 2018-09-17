@@ -36,4 +36,11 @@ public class ConfigFileReader {
         } else throw new RuntimeException("Browser set to Null !");
     }
 
+    public Long getExplicitWait() {
+        Long wait = Long.parseLong(properties.getProperty("explicitWait"));
+        if (wait != null) {
+            return wait;
+        } else throw new RuntimeException("Browser set to Null !");
+    }
+
 }

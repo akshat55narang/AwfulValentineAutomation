@@ -1,5 +1,6 @@
 package com.valentineaweful.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -19,5 +20,13 @@ public class HomePage extends WrapperPage {
         waitForElement(var).click();
     }
 
+    public void getCartAdditionConfirmationPopUP() {
+        Assert.assertTrue(waitForElement(By.xpath("//div[@id='fancybox-content']//a[text()=" +
+                "'Closeness and Togetherness']")).isDisplayed());
+    }
 
+    public void getAddToCartPopUpButton(String buttonText) {
+        waitForElementToBeClickable(By.xpath("//div[@id='fancybox-content']//input[@value='Add to Cart']")).click();
+
+    }
 }

@@ -4,10 +4,8 @@ import com.valentineaweful.managers.DriverProvider;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import org.openqa.selenium.WebDriver;
 
 public class StepDefinitionGeneric extends DriverProvider {
-    private WebDriver driver;
 
     @Before
     public void beforeScenario(Scenario scenario) {
@@ -15,10 +13,10 @@ public class StepDefinitionGeneric extends DriverProvider {
     }
 
     @After
-    public void afterScenario() {
-        driver = getDriver();
-        //if (driver != null) {
-           //driver.close();
-        //}
+    public void afterScenario(Scenario scenario) {
+        System.out.println("After scenario !");
+        //if(getDriver() != null){
+        //    getDriver().close();
+       // }
     }
 }
